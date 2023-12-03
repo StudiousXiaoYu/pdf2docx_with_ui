@@ -8,7 +8,7 @@ import os
 def convert_pdf_to_docx_with_display(pdf_file):
     tmp_dir = "./docx"
     os.makedirs(tmp_dir, exist_ok=True)
-    tmp_file =  os.path.join(tmp_dir, "output.docx")
+    tmp_file = os.path.join(tmp_dir, "output.docx")
     # Convert PDF to DOCX
     cv = Converter(pdf_file)
     cv.convert(tmp_file)
